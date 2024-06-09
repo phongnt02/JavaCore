@@ -1,0 +1,24 @@
+Xây dựng chương trình quản lý kết quả học tập của sinh viên tại một trường đại học. Có 2 loại sinh viên là sinh viên chính quy
+và sinh viên tại chức với các thông tin giống nhau: mã sinh viên, họ tên, ngày tháng năm sinh, năm vào học, điểm đầu vào và danh sách kết quả học tập.
+Sinh viên tại chức có thêm thông tin nơi liên kết đào tạo(Đồng Nai, Cà Mau, …).
+Khoa gồm có các thông tin: tên khoa và danh sách sinh viên đang theo học.
+Kết quả học tập gồm có tên học kỳ, điểm trung bình học kỳ đó.
+
+Hiện thực các yêu cầu sau:
+Hiện thực các lớp cần thiết cho bài toán trên
+Phương thức khởi tạo (constructor) cho các lớp: constructor chuẩn, constructor
+có tham số, constructor sao chép
+1. Phương thức input và output để cho phép người dùng nhập thông tin cho các
+loại sinh viên
+2. Phương thức xác định sinh viên có phải là chính quy hay không?
+Xử lý Exception khi người dùng nhập sai dữ liệu
+3. Phương thức xác định tổng số sinh viên chính quy của khoa?
+4. Tìm ra sinh viên có điểm đầu vào cao nhất ở mỗi khoa
+5. Ở mỗi khoa, lấy ra danh sách các sinh viên tại chức tại nơi liên kết đào tạo = VN
+6. Ở mỗi khoa, lấy ra danh sách sinh viên có điểm trung bình ở học kỳ gần nhất
+(là học kỳ cuối cùng trong danh sách kết quả học tập của sinh viên) từ 8.0 trở
+lên
+7. Ở mỗi khoa, sắp xếp danh sách sinh viên tăng dần theo loại và giảm dần theo
+năm vào học (sử dụng interface Comparable hoặc Comparator)
+8. Ở mỗi khoa, thống kê số lượng sinh viên theo năm vào học. Ví dụ 2020: 100,
+2019: 90, 2018: 120.
