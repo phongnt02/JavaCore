@@ -1,42 +1,41 @@
 import com.fpt.fsa.dao.DoctorDAO;
+import com.fpt.fsa.entity.Appointment;
 import com.fpt.fsa.entity.Doctor;
-
+import org.junit.jupiter.api.*;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class DoctorDAOTest {
+    private DoctorDAO doctorDAO;
 
-    public static void main(String[] args) {
-        // Test CRUD operations for DoctorDAO
-        DoctorDAO doctorDAO = new DoctorDAO();
+    @BeforeAll
+    public void setup() {
+        doctorDAO = new DoctorDAO();
+    }
 
-        // Create a new Doctor
+    @Test
+    public void testCreateDoctorWithAppointments() {
         Doctor doctor = new Doctor();
         doctor.setFirstName("John");
-        doctor.setLastName("Smith");
-        // Set other attributes
-        // ...
+        doctor.setLastName("Doe");
 
-        doctorDAO.create(doctor);
-        System.out.println("Doctor created with ID: " + doctor.getDocNumber());
-
-        // Read Doctor by ID
-        Doctor retrievedDoctor = doctorDAO.find(doctor.getDocNumber());
-        System.out.println("Retrieved Doctor: " + retrievedDoctor);
-
-        // Update Doctor
-        retrievedDoctor.setFirstName("Jane");
-        doctorDAO.update(retrievedDoctor);
-        System.out.println("Doctor updated: " + retrievedDoctor);
-
-        // Delete Doctor
-        doctorDAO.delete(retrievedDoctor.getDocNumber());
-        System.out.println("Doctor deleted successfully.");
-
-        // Test findAll method
-        List<Doctor> doctors = doctorDAO.findAll();
-        System.out.println("All Doctors:");
-        for (Doctor d : doctors) {
-            System.out.println(d);
+        List<Appointment> appointments = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            Appointment appointment = new Appointment();
+            appointment.setDate(new Date());
+            appointment.setTime(new Date());
+            appointment.setDuration(30);
+            appointment.setReason("Checkup");
+            appointments.add(appointment);
         }
+
+        doctorDAO.createDoctorWithAppointments(doctor, appointments);
+
+        Doctor retrievedDoctor = doctorDAO.find(doctor.getDocNumber());
+        Assertions.assertNotNull(retrievedDoctor);
+        Assertions.assertEquals("John", retrievedDoctor.getFirstName());
+        Assertions.assertEquals("Doe", retrievedDoctor.getLastName());
     }
 }

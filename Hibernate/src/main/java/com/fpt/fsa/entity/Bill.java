@@ -19,7 +19,7 @@ public class Bill {
     @Id
     @Column(name = "bill_number")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int billNumber;
+    private long billNumber;
 
     @Temporal(TemporalType.DATE)
     private Date date;
