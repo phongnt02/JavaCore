@@ -1,0 +1,9 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "https://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <weaver>
+        <include within="com.fpt.fsa.*"/>
+    </weaver>
+    <aspects>
+        <aspect name="com.fpt.fsa.aspect.FieldAccessAspect"/>
+    </aspects>
+</aspectj>
