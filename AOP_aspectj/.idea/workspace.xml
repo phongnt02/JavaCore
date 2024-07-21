@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec692635-d22f-4380-b170-5573a4bbd880" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/InsidiousConfiguration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/0/2/02dc9e0a540211f1b815bf56f88bd01a8e66b415" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/0/a/0a641dc74dfee7693e1af3f63074d55ac62a27ff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/0/f/0f8fe2c49f127c7c9cc50a03612c0e167b9a4a5f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/2/0/20d9fb766fcf41d88a0d7ef5a4b7625de8c20d22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/4/5/4516180f8c925235301084cfcd80ed60096c7ccc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/9/f/9f464c4b8465d8cf4457dcaba3b9dffc1c69ff94" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/a/7/a72056a171e82519482a25aeec42cc304a36f86b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/b/1/b1384dd4496d8cf99d547b3b53b336ca91549fa4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/d/e/de3018b650cdb0fbcb72a060f5063f535f7b66b0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aop_programming/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-    </list>
+    <list default="true" id="ec692635-d22f-4380-b170-5573a4bbd880" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,10 +13,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2j7A0gcrNyTaxS0QjM3bipkbtiE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,6 +33,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Thanh Phong/Downloads/spring_lecture/spring_bean_example",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -91,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720727521043</updated>
       <workItem from="1720727523262" duration="105000" />
+      <workItem from="1720929625089" duration="69000" />
     </task>
     <servers />
   </component>
