@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee Detail</title>
+</head>
+<body>
+<h1>Employee Detail</h1>
+<p>ID: <span th:text="${employee.employeeId}">1</span></p>
+<p>Name: <span th:text="${employee.firstName} + ' ' + ${employee.lastName}">John Doe</span></p>
+<p>Date of Birth: <span th:text="${employee.dateOfBirth}">1990-01-01</span></p>
+<p>Address: <span th:text="${employee.address}">123 Street</span></p>
+<p>Phone: <span th:text="${employee.phone}">1234567890</span></p>
+<p>Department: <span th:text="${employee.departmentName}">HR</span></p>
+<a th:href="@{/employees}">Back to List</a>
+</body>
+</html>
