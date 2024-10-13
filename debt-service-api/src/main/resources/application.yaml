@@ -1,0 +1,35 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /debt-service
+
+spring:
+  application:
+    name: debt-service-api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+    hikari:
+      connection-timeout: 30000 # 30s
+      pool-name: debt-service-api-conn
+      maximum-pool-size: 30
+      minimum-idle: 2
+      idle-timeout: 10000 # 10s
+      max-lifetime: 1000 #1s
+      auto-commit: true
+    url: jdbc:mysql://localhost:3306/debt?createDatabaseIfNotExist=true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    jdbc:
+      dialect: mysql
+
+service:
+  avatar-link-default: https://w7.pngwing.com/pngs/223/244/png-transparent-computer-icons-avatar-user-profile-avatar-heroes-rectangle-black-thumbnail.png
+  admin-token: admin123
+  jwt.secret: ZGVidHNlcnZpY2V0b2tlbnNlY3JldA==
+  jwt.token.life-time: 86400 # a day
+  date-pattern: yyyy-MM-dd'T'HH:mm:ssZ
